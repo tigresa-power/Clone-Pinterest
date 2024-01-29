@@ -1,0 +1,306 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 0.9rem;
+}
+#header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0.3 rem;
+  margin: 1rem;
+  gap: 1rem;
+}
+/* --------primer section------------ */
+#primer-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+  font-weight: bolder;
+}
+.img-pinterest {
+  width: 8rem;
+  height: 5rem;
+}
+#imagenpinterest {
+  width: 8rem;
+  height: 5rem;
+}
+.Explorar-container {
+  width: 6rem;
+  height: 2.5rem;
+  border-color: #e2e2e2;
+  border-bottom: #e2e2e2;
+  border-style: hidden;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+.Explorar-container:hover {
+  background-color: #d3d0d0;
+}
+#img-flechita {
+  width: 0.6rem;
+  height: 0.6rem;
+}
+/* --------segunda section------------ */
+#segunda-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #e2e2e2;
+  width: 80rem;
+  height: 2.2rem;
+  border-radius: 1rem;
+  padding: 0.4rem;
+  color: rgb(125, 126, 126);
+  font-weight: lighter;
+}
+#segunda-section:hover {
+  background-color: #d3d0d0;
+  color: black;
+}
+#img-buscador {
+  width: 1rem;
+  height: 1rem;
+}
+/* --------tercer section------------ */
+#tercer-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 0.5rem;
+  font-weight: bolder;
+}
+.iniciar-sesion {
+  width: 7rem;
+  height: 2.5rem;
+  background-color: #e2e2e2;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  border-color: #e2e2e2;
+  border-bottom: #e2e2e2;
+  border-style: hidden;
+}
+.iniciar-sesion:hover {
+  background-color: #d3d0d0;
+}
+.registrate {
+  width: 6rem;
+  height: 2.5rem;
+  background-color: #ed0000;
+  text-align: center;
+  padding: 0.5rem;
+  text-decoration: dotted;
+  border-radius: 1rem;
+  border-style: hidden;
+  border-color: #ed0000;
+  border-bottom: #ed0000;
+  color: white;
+}
+.registrate:hover {
+  width: 6rem;
+  height: 2.5rem;
+  background-color: #cc0000;
+  text-align: center;
+  padding: 0.5rem;
+  text-decoration: dotted;
+  border-radius: 1rem;
+  color: white;
+}
+.flecha {
+  width: 1rem;
+  height: 1rem;
+  background-color: #e2e2e2;
+  text-align: center;
+  padding: 0.5rem;
+  text-decoration: dotted;
+  border-radius: 5rem;
+}
+.flecha:hover {
+  background-color: #d3d0d0;
+}
+#flechita {
+  width: 1rem;
+  height: 1rem;
+}
+/* ----------------main container------------------- */
+#main-container {
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: white;
+  gap: 1.5rem;
+}
+
+.image-container {
+  width: 15rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  gap: 0.5rem;
+}
+.image-container3 {
+  width: 15rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  gap: 0.5rem;
+}
+/* caracteristicas de una imagen */
+#primera-imagen {
+  position: relative;
+  width: 15rem;
+  height: 25rem;
+}
+.image-original {
+  width: 15rem;
+  height: 25rem;
+  border-radius: 2rem;
+}
+
+.name-image {
+  position: absolute;
+  width: 15rem;
+  height: 25rem;
+  background-color: chartreuse;
+  top: 0rem;
+  transition: all 500ms ease-out;
+  background: rgba(74, 84, 87, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 2rem;
+  color: white;
+}
+h4 {
+  padding: 1.8rem;
+  margin: 1rem;
+}
+#primera-imagen:hover > .image-original {
+  opacity: 1;
+  visibility: visible;
+  width: 16rem;
+  height: 27rem;
+}
+#primera-imagen:hover > .name-image {
+  opacity: 1;
+  visibility: visible;
+  width: 16rem;
+  height: 27rem;
+}
+#primera-imagen:hover > .name-image h4 {
+  margin-top: 20rem;
+}
+/* imagen 2 con diferente tamañao*/
+#segunda-imagen {
+  position: relative;
+  width: 15rem;
+  height: 15rem;
+  
+}
+.image-original2 {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 2rem;
+}
+
+.name-image2 {
+  position: absolute;
+  width: 15rem;
+  height: 15rem;
+  background-color: chartreuse;
+  top: 0rem;
+  transition: all 500ms ease-out;
+  background: rgba(74, 84, 87, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 2rem;
+  color: white;
+}
+h4 {
+  padding: 0.5rem;
+  margin: 0.2rem;
+}
+#segunda-imagen:hover > .image-original2 {
+  opacity: 1;
+  visibility: visible;
+  width: 16rem;
+  height: 16rem;
+}
+#segunda-imagen:hover > .name-image2 {
+  opacity: 1;
+  visibility: visible;
+  width: 16rem;
+  height: 16rem;
+}
+#segunda-imagen:hover > .name-image2 h4 {
+  margin-top: 12rem;
+}
+
+/* imagen 3 con otro tamaño */
+
+#tercer-imagen {
+  position: relative;
+  width: 15rem;
+  height: 40rem;
+}
+.image-original3 {
+  width: 15rem;
+  height: 40rem;
+  border-radius: 2rem;
+}
+
+.name-image3 {
+  position: absolute;
+  width: 15rem;
+  height: 40rem;
+  background-color: chartreuse;
+  top: 0rem;
+  transition: all 500ms ease-out;
+  background: rgba(74, 84, 87, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 2rem;
+  color: white;
+}
+h4 {
+  padding: 0.5rem;
+  margin: 0.2rem;
+}
+#tercer-imagen:hover > .image-original3 {
+  opacity: 1;
+  visibility: visible;
+  width: 16rem;
+  height: 41rem;
+}
+#tercer-imagen:hover > .name-image3 {
+  opacity: 1;
+  visibility: visible;
+  width: 16rem;
+  height: 41rem;
+}
+#tercer-imagen:hover > .name-image3 h4 {
+  margin-top: 25rem;
+}
